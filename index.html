@@ -48,10 +48,17 @@
     </section>
   </main>
 
-  <button class="smart-login" id="smart-login">
-    <span class="login-text">Iniciar o Registrar</span>
-    <span class="login-icon">+</span>
-  </button>
+  <div class="smart-login-wrapper">
+    <button class="smart-login" id="smart-login">
+      <span class="login-text">Iniciar o Registrar</span>
+      <span class="login-icon" aria-hidden="true"></span>
+    </button>
+
+    <div class="login-menu" id="login-menu">
+      <button class="menu-item" id="go-home-btn" type="button">🏠 Ir a Inicio</button>
+      <button class="menu-item danger" id="logout-btn" type="button">🚪 Cerrar Sesión</button>
+    </div>
+  </div>
 
   <button class="order-now">
     <span>Order Now</span>
@@ -81,11 +88,6 @@
         </div>
       </form>
     </div>
-  </div>
-
-  <div class="login-menu" id="login-menu">
-    <button class="btn ghost">Ir a Inicio</button>
-    <button class="btn ghost" id="logout-btn">Cerrar Sesión</button>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-YE9s+0mXrx4Q3Slb3sFPOzJ9vZQ7w0iU4L2dY5Z0a3oVymc9rb+Z1uZgRaSPo6e7bgx9vYpRV2S8w1f4w6y0rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
